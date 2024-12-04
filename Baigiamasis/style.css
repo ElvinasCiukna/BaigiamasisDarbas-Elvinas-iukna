@@ -1,0 +1,625 @@
+/*BENDRAS*/
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+    margin: 0 auto;
+     overflow-x: hidden
+}
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    height: 100Į;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/*pavadinimas ir navigacija*/
+header .navigacija {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    color: #333;
+    padding: 1.5rem 0;
+    box-sizing: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: linear-gradient(-1deg, rgb(23, 210, 216), rgb(139, 143, 143), rgb(155, 241, 234));
+}
+
+.pavadinimas {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0 100px;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+    margin-left:  auto 20px;
+    transition: color 0.3s ease;
+    font-size: 25px;
+    padding-right: 50px;
+}
+nav a:hover {
+    color: red
+}
+
+/* pirmas skyrius*/
+.titulinis {
+    background-size: cover;
+    background-position: center;
+    color: #000d0e;
+    text-align: center;
+    padding: 5rem 0; 
+    background: linear-gradient(-4deg, rgb(16, 61, 57), rgb(55, 209, 209), rgb(24, 59, 59));
+}
+
+.titulinis h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #000d0e;
+}
+.titulis p {
+    font-size: 18px;
+    max-width: 700px;
+    margin: 0 auto 30px;
+    color: #000d0e;
+}
+
+/*paslaugos*/
+#paslaugos {
+    padding: 60px 0;
+    background: linear-gradient(4deg, rgb(43, 70, 70), rgb(55, 209, 209), rgb(42, 66, 64));
+}
+
+#paslaugos h2 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #000d0e;
+    margin-bottom: 30px;
+}
+
+.paslauga {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 20px;
+    width: 25%; 
+    max-width: 90%; 
+    background: linear-gradient(-5deg,rgb(175, 190, 190) , rgb(102, 121, 121),rgb(20, 228, 210) );
+}
+
+.paslauga img {
+    width: 100%;
+    height: 250px;
+    max-width: 400px; 
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.paslauga h3 {
+    font-size: 1.6em;
+    color: #000d0e;
+    margin-bottom: 10px;
+}
+
+.paslauga p {
+    font-size: 1em;
+    color: #000d0e;
+}
+
+.paslauga:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.paslauga.highlight {
+    border: 2px solid #0056b3;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/*Konteineris*/
+.container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-around; 
+    gap: 20px;
+    width: 100%; 
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 15px;
+    box-sizing: border-box;
+}
+
+/*Mygtukai*/
+.btn {
+    display: inline-block;
+    color: #0a0a0a;
+    padding: 12px 30px;
+    text-decoration: none;
+    border: 2px solid rgb(236, 235, 232);
+    border-radius: 8px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+background-color: transparent;
+color: silver;
+transform: translateY(-5px); /* -5 pakyla į viršų*/
+}
+
+
+/* Apie mus  */
+#apie-mus {
+    padding: 0px 0;
+    text-align: center;
+    background: linear-gradient(-4deg, rgb(42, 66, 64), rgb(55, 209, 209), rgb(42, 66, 64));
+}
+
+#apie-mus h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+
+.apie-turinys {
+    display: flex;
+    justify-content: space-around; 
+    gap: 30px; /* Tarpai tarp blokų */
+    flex-wrap: wrap; 
+    margin: 0 auto;
+    max-width: 100%; 
+}
+
+.apie-skyrius {
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 2px 8px 6px 8px rgba(0, 0, 0, 0.1);
+    width: 30%; 
+    min-width: 280px; 
+    max-width: 350px; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+    margin-bottom: 20px; 
+    background: linear-gradient(-5deg,rgb(175, 190, 190) , rgb(102, 121, 121),rgb(20, 228, 210) );
+}
+
+.apie-skyrius h3 {
+    font-size: 1.7em;
+    color: #000d0e;
+    margin-bottom: 15px;
+}
+
+.apie-skyrius p {
+    color: #000d0e;
+    font-size: 1.1em;
+    line-height: 1.6;
+    
+}
+
+.apie-skyrius:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Karjeros skyrius */
+#karjera {
+    padding: 50px 0;
+    background: linear-gradient(4deg, rgb(42, 66, 64), rgb(55, 209, 209), rgb(42, 66, 64));
+}
+
+
+.komandos-turinys {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    gap: 20px; 
+}
+
+/* Komandos narys */
+.komandos-narys {
+    padding: 35px;
+    position: relative;
+    width: 350px; /* Kiekvieno bloko plotis */
+    height: 600px; /* Kiekvieno bloko aukštis */
+    transition: transform 0.3s ease-in-out, z-index 0.3s ease-in-out; /* Animacija */
+    cursor: pointer;
+    box-shadow: 2px 8px 6px 8px rgba(0, 0, 0, 0.1); 
+    border-radius: 25px; 
+    background: linear-gradient(-5deg,rgb(175, 190, 190) , rgb(102, 121, 121),rgb(20, 228, 210) );
+}
+
+.komandos-narys img {
+    max-width: 300px;
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    border-radius: 10px ; 
+    margin-top: 5px;
+}
+
+.komandos-narys h3 {
+    text-align: center;
+    font-size: 28px;
+}
+
+.komandos-narys p {
+    text-align: center;
+    padding: 0px;
+    font-size: 20px;
+}
+
+.komandos-narys.active {
+    transform: scale(1.1); 
+    z-index: 2; 
+}
+
+.komandos-narys:not(.active) {
+    transform: scale(0.9); 
+    opacity: 0.7;
+}
+
+/* Galerija  */
+#gallery {
+    padding: 50px 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center; 
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.gallery {
+    background: linear-gradient(-4deg, rgb(42, 66, 64), rgb(55, 209, 209), rgb(42, 66, 64));
+    padding-bottom: 30px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.gallery-item {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+
+.gallery-item img:hover {
+    transform: scale(1.1);
+}
+
+/* Lightbox (padidinta nuotraukos peržiūra) */
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.lightbox img {
+    max-width: 90%; /* plotis */
+    max-height: 80%; /* aukštis  */
+    width: auto; 
+    height: auto; 
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); 
+}
+.lightbox .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+.lightbox .close:hover {
+    color: #ff6347; 
+}
+
+/* kontaktai */
+#kontaktai {
+    margin:  0;
+    padding: 50px 20px; 
+    background: linear-gradient(4deg, rgb(42, 66, 64), rgb(102, 170, 170), rgb(42, 66, 64));
+}
+
+.kontaktai h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #333; 
+    font-weight: bold;
+}
+
+.kontaktai-turinys {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.kontaktai-info, .kontaktai-forma, .kontaktai-turinys > div {
+    flex: 1 1 calc(33.333% - 20px);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(-5deg,rgb(11, 233, 233) , rgb(102, 121, 121),rgb(20, 228, 210) );
+}
+
+.kontaktai-info h3, .kontaktai-forma h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.kontaktai-info p, .kontaktai-forma form {
+    font-size: 16px;
+    margin-bottom: 10px;
+    line-height: 1.5;
+    color: #555;
+}
+
+.kontaktai-forma form input,
+.kontaktai-forma form textarea {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.kontaktai-forma form textarea {
+    height: 100px;
+    resize: none;
+}
+
+.kontaktai-forma form .btn {
+    display: inline-block;
+    background-color: #cae6df;
+    color: #141414;
+    padding: 15px 25px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.kontaktai-forma form .btn:hover {
+    background-color: #e1e2e2;
+}
+
+/* lokacija */
+#lokacija {
+    padding-bottom: 120px;
+    display: flex;
+    justify-content: center; /* horizontalu*/
+    align-items: center; /* vertikalu*/
+    height: 100vh; 
+    background: linear-gradient(-4deg, rgb(42, 66, 64), rgb(55, 209, 209), rgb(42, 66, 64));
+}
+
+.lokacijos-zemelapis {
+    width: 50%; 
+    max-width: 1200px; 
+    height: 70vh; 
+    text-align: center;
+}
+
+.lokacijos-zemelapis iframe {
+    width: 100%; 
+    height: 100%; 
+    border-radius: 50px; 
+    box-shadow:  2px  8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+    background: radial-gradient(circle,  rgb(7, 74, 63), rgb(51, 102, 102));
+    color: #f4f4f4; 
+    padding: 20px 0;
+    text-align: center;
+    font-size: 14px;
+}
+
+footer p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+footer a {
+    color: #00aaff; 
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: #0088cc; 
+    text-decoration: underline;
+}
+
+footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Prieiga mobiliesiems */
+@media (max-width: 768px) {
+    .pavadinimas {
+        font-size: 24px;
+        padding: 0 30px;
+    }
+
+    .titulinis h1 {
+        font-size: 2.5em;
+    }
+
+    .titulis p {
+        font-size: 1em;
+        padding: 0 15px;
+    }
+
+    .paslauga {
+        width: 80%;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .komandos-turinys {
+        flex-direction: column; 
+        gap: 20px;
+    }
+
+    .apie-skyrius {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .gallery-item {
+        width: 90%;
+        height: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .titulinis h1 {
+        font-size: 2rem;
+    }
+
+    .paslauga h3 {
+        font-size: 1.4rem;
+    }
+
+    .btn {
+        padding: 8px 20px;
+    }
+
+    .gallery-item img {
+        height: 80%;
+    }
+
+    form {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    header, footer {
+        padding: 0.5rem;
+    }
+
+    main {
+        font-size: 0.9rem;
+    }
+}
+
+
+/* Burgerio ikonėlė */
+.burger-icon {
+    display: none; 
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.burger-icon span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: #333;
+    border-radius: 3px;
+    transition: 0.3s ease-in-out;
+}
+
+@media (max-width: 1024px) { 
+    .burger-icon {
+        display: flex; 
+    }
+
+    nav {
+        display: none; 
+        flex-direction: column;
+        background-color: #fff;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        z-index: 10;
+        padding: 10px 0;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        background: linear-gradient(4deg, rgb(6, 32, 30), rgb(169, 190, 190), rgb(9, 36, 34));
+    }
+
+    nav.active {
+        display: flex; 
+    }
+
+    nav a {
+        padding: 10px;
+        text-align: center;
+        border-bottom: 1px solid #ddd;
+    }
+
+    nav a:last-child {
+        border-bottom: none;
+    }
+}

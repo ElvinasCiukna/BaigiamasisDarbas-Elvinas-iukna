@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CargoTrip</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigacija -->
+    <header>
+        <div class="navigacija">
+            <div class="pavadinimas">CargoTrip</div>
+            <div class="burger-icon" onclick="toggleMenu()"> <!-- Burgerio ikonėlė -->
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav id="main-nav">
+                <a href="#paslaugos">Paslaugos</a>
+                <a href="#apie-mus">Apie mus</a>
+                <a href="#karjera">Karjera</a>
+                <a href="#galerija">Galerija</a>
+                <a href="#kontaktai">Kontaktai</a>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Titulinis -->
+    <section class="titulinis">
+        <div class="container">
+            <h1>Patikimi logistikos sprendimai</h1>
+            <p>Mes teikiame kompleksines logistikos paslaugas, kurios padės jūsų verslui augti greičiau ir efektyviau. Mūsų profesionalų komanda užtikrina sklandų ir operatyvų krovinių gabenimą.</p>
+            <p>Siekiame būti pirmu pasirinkimu partneriams, teikdami krovinių gabenimo paslaugą Europoje, vertinami už profesionalumą, aukštą paslaugų kokybę ir ilgalaikę partnerystę.</p>
+            <a href="#" class="btn">Gauti Pasiūlymą</a>
+        </div>
+    </section>
+
+    <!-- Paslaugos -->
+    <section id="paslaugos">
+        <h2>Paslaugos</h2>
+        <div class="container">
+            <div class="paslauga">
+                <img src="/img/Vilkikas-3.png" alt="tarptautinis gabenimas">
+                <h3>Tarptautinis gabenimas</h3>
+                <p>Teikiame aukštos kokybės tarptautinio krovinių gabenimo paslaugas visoje Europoje.</p>
+            </div>
+            <div class="paslauga">
+                <img src="/img/Sandeliavimas-5.jpg" alt="sandeliavimas">
+                <h3>Sandėliavimas</h3>
+                <p>Modernus sandėlis su aukščiausios kokybės saugojimo ir tvarkymo įranga.</p>
+            </div>
+            <div class="paslauga">
+                <img src="/img/muitines-tarpininkas.jpg" alt="muitines tarpininkas">
+                <h3>Muitinės tarpininkas</h3>
+                <p>Profesionalus muitinės dokumentų tvarkymas ir konsultacijos.</p>
+            </div>
+            <div class="paslauga">
+                <img src="/img/juru-transportas.jpg" alt="juru kroviniai">
+                <h3>Jūrų kroviniai</h3>
+                <p>Patikimas ir efektyvus krovinių gabenimas jūros transportu tarp žemynų.</p>
+            </div>
+            <div class="paslauga">
+                <img src="/img/SQ+logo.png" alt="skubus pristatymas">
+                <h3>Skubus pristatymas</h3>
+                <p>Greitas ir patikimas krovinių pristatymas į bet kurią pasaulio vietą per trumpiausią įmanomą laiką.</p>
+            </div>
+            <div class="paslauga">
+                <img src="/img/3pl-logistika.jpg" alt="Kompleksinė Logistika">
+                <h3>Kompleksinė Logistika</h3>
+                <p>Visapusiški logistikos sprendimai, apimantys planavimą, transportavimą, sandėliavimą ir dokumentų valdymą.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Apie -->
+   <section id="apie-mus">
+        <div class="container">
+            <h2>Apie mus</h2>
+            <div class="apie-turinys">
+                <div class="apie-skyrius" onclick="toggleText('vizija')">
+                    <h3>Mūsų vizija</h3>
+                    <p id="vizija" class="hidden">Tapti pirmaujančia logistikos kompanija Lietuvoje ir Baltijos šalyse, kuri nuolat kuria inovatyvius sprendimus ir užtikrina aukščiausios kokybės paslaugas savo klientams.</p>
+                </div>
+
+                <div class="apie-skyrius" onclick="toggleText('misija')">
+                    <h3>Mūsų misija</h3>
+                    <p id="misija" class="hidden">Teikti patikimus, efektyvius ir kokybiškus logistikos sprendimus, kurie padeda mūsų klientų verslui augti ir plėstis tarptautinėje rinkoje.</p>
+                </div>
+
+                <div class="apie-skyrius" onclick="toggleText('vertibes')">
+                    <h3>Mūsų vertybės</h3>
+                    <p id="vertibes" class="hidden">Profesionalumas, patikimumas, inovatyvumas, klientų poreikių supratimas ir nuolatinis tobulėjimas yra pagrindiniai principai, kuriais vadovaujamės savo veikloje.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Komanda  -->
+    <section id="karjera">
+        <div class="container">
+            <h2>Karjeros galimybės</h2>
+            <div class="komandos-turinys">
+                <div class="komandos-narys" onclick="moveToFront(this)">
+                    <img src="/img/logistics-manager.avif" alt="logistikos vadybininkas">
+                    <h3>Logistikos vadybininkas</h3>
+                    <p>Koordinuoja tarptautinius krovinių srautus ir optimizuoja transportavimo procesus.</p>
+                </div>
+    
+                <div class="komandos-narys" onclick="moveToFront(this)">
+                    <img src="/img/warehouse-supervisor.webp" alt="sandėlio vadovas">
+                    <h3>Sandėlio vadovas</h3>
+                    <p>Užtikrina efektyvų sandėlio valdymą, inventoriaus apskaitą ir prekių srautų kontrolę.</p>
+                </div>
+    
+                <div class="komandos-narys" onclick="moveToFront(this)">
+                    <img src="/img/Internalional-freight-specialist.png" alt="tarptautinių krovinių specialistas">
+                    <h3>Krovinių Specialistas</h3>
+                    <p>Ekspertas muitinės procedūrose ir tarptautinio gabenimo dokumentacijoje.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Galerija -->
+    <section id="galerija" class="gallery">
+        <div class="container">
+            <h2>Galerija</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="/img/Sandeliavimas-3.jpg" alt="Sandėlio Operacijos">
+                </div>
+                <div class="gallery-item">
+                    <img src="/img/Vilkikas-2.png" alt="Tarptautinis Transportas">
+                </div>
+                <div class="gallery-item">
+                    <img src="/img/muitines-tarpininkas.jpg" alt="Muitinės Procesas">
+                </div>
+                <div class="gallery-item">
+                    <img src="/img/komanda.webp" alt="Komandos Susitikimas">
+                </div>
+                <div class="gallery-item">
+                    <img src="/img/logistikos-centras-2.jpg" alt="Logistikos Centras">
+                </div>
+                <div class="gallery-item">
+                    <img src="/img/10.jpg" alt="Krovinių Pakrovimas">
+                </div>
+                <div class="gallery-item">
+                    <img src="/img/9.webp" alt="Sandėlio Operacijos">
+                </div>
+                <div class="gallery-item">
+                    <img src="/img/2.jpg" alt="Komandos Susitikimas">
+                </div>
+                <div class="gallery-item">
+                    <img src="/img/11.jpg" alt="Logistikos Centras">
+                </div>
+                <div class="gallery-item">
+                    <img src="/img/3.jpg" alt="Krovinių Pakrovimas">
+                </div>
+                <div class="gallery-item">
+                    <img src="/img/5.jpeg" alt="Sandėlio Operacijos">
+                </div>
+                <div class="gallery-item">
+                    <img src="/img/6.png" alt="Tarptautinis Transportas">
+                </div>
+            </div>
+        </div>
+        <div id="lightbox" class="lightbox">
+            <span class="close">&times;</span>
+            <img class="lightbox-content" id="lightbox-img" src="" alt="">
+        </div>
+    </section>
+
+<!-- Kontaktai -->
+    <section id="kontaktai">
+        <div class="container">
+            <h2>Susisiekite su Mumis</h2>
+            <div class="kontaktai-turinys">
+                <div class="kontaktai-info">
+                    <h3>Kontaktai</h3>
+                    <p><strong>Adresas:</strong> Pramonės rajonas Utena, 28225 Utenos r. sav.</p>
+                    <p><strong>Telefonas:</strong> +370 5 123 6237</p>
+                    <p><strong>El. paštas:</strong> info@CargiTrip.lt</p>
+                    <p><strong>Darbo laikas:</strong> I-V: 8:00 - 17:00</p>
+                </div>
+                <div>
+                    <h3>Rekvizitai</h3>
+                    <p><strong>Įmonės kodas:</strong>161123841</p> 
+                    <p><strong>PVM mokėtojo kodas:</strong> LT613799840</p> 
+                    <p><strong>Sąsk. Nr.:</strong> LT649456790001027146</p> 
+                    <p><strong>Bankas:</strong> AB SEB bankas, banko kodas 70440</p> 
+                </div>
+                <div class="kontaktai-forma">
+                    <h3>Užsisakykite Konsultaciją</h3>
+                    <form>
+                        <input type="text" placeholder="Jūsų Vardas" required>
+                        <input type="email" placeholder="El. Paštas" required>
+                        <input type="tel" placeholder="Telefono Numeris">
+                        <textarea placeholder="Jūsų Žinutė" required></textarea>
+                        <button type="submit" class="btn">Siųsti Užklausą</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lokacija  -->
+    <section id="lokacija">
+        <div class="lokacijos-zemelapis">
+            <h2>Mus galite rasti</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9038.684535377086!2d25.609042076040918!3d55.503255767883026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dd57c31252b77f%3A0x5ecf7ba6d749ad73!2sPramon%C4%97s%20rajonas%2C%20Utena%2C%2028225%20Utenos%20r.%20sav.!5e0!3m2!1slt!2slt!4v1732808431112!5m2!1slt!2slt" 
+            width="600" 
+            height="450" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        </div>
+    </section>
+
+    <!-- Footeris -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Cargo trip. Visos teisės saugomos.</p>
+        </div>
+    </footer> 
+</body>
+</html>
